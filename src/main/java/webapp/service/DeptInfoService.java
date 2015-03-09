@@ -56,7 +56,12 @@ public class DeptInfoService {
 		return list;
 	}
 	
-	
+	public List<Dept> getDeptInfoAllWithEmps() {
+		
+		List<Dept> list = deptdao.selectAllWithEmps();
+
+		return list;
+	}
 
 }
 
